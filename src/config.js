@@ -2,10 +2,13 @@
 import Home from "@/views/Home.vue";
 
 // site title, description, & general info
-/**
- * @type {String} website title
- */
-const title = "Vue Vuetify FontAwesome - starter app";
+/// website title
+const title = "Vue Vuetify Starter With Tabs";
+/// website title
+const author = "Mohssine Aboutaj";
+/// website description
+const description =
+  "A Vuejs & Vuetify starter app with Tabs, VueRouter, FontAwesome 5 icons";
 
 // links & routes
 /**
@@ -38,4 +41,4 @@ let links = [
 ];
 
 // exporting
-export { title, links };
+export { title, links, author, description };

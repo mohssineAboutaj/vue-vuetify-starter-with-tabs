@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import { general } from "@/mixins/navbar.js";
+import { navbar } from "@/mixins";
 
 export default {
-  mixins: [general],
+  mixins: [navbar],
 };
 </script>

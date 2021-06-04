@@ -1,6 +1,14 @@
-const { title, links } = require("../config");
+import { title, links, author } from "./config";
 
-module.exports.general = {
+export const globalMixins = {
+  methods: {
+    xyz() {
+      console.log("XYZ mixin/method called in HelloWorld component");
+    },
+  },
+};
+
+export const navbar = {
   data: () => ({
     darkMode: false,
     clipped: false,
@@ -22,4 +30,13 @@ module.exports.general = {
     // miximize sidebar on large screens
     this.drawer = window.innerWidth > 1200 ? true : false;
   },
+};
+
+export const footer = {
+  data: () => ({
+    fixed: false,
+    title,
+    links,
+    author: author || "no author",
+  }),
 };
